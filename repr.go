@@ -793,6 +793,9 @@ func typeName(typ reflect.Type, packageMap map[string]string) string {
 // Questionable
 func isZero(rval reflect.Value) bool {
 	ptr, size := raw(rval)
+	if ptr == nil {
+		return true
+	}
 	for i := uintptr(0); i < size; i++ {
 		if *(*byte)(unsafe.Pointer(uintptr(ptr) + i)) != 0 {
 			return false
@@ -810,8 +813,11 @@ func raw(rval reflect.Value) (unsafe.Pointer, uintptr) {
 		typ uintptr
 		dat unsafe.Pointer
 	}
-	iface := rval.Interface()
-	return (*emptyInterface)(unsafe.Pointer(&iface)).dat, rval.Type().Size()
+	if rval.CanInterface() {
+		iface := rval.Interface()
+		return (*emptyInterface)(unsafe.Pointer(&iface)).dat, rval.Type().Size()
+	}
+	return nil, 0
 }
 
 /*
