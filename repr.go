@@ -32,7 +32,7 @@ literals. Use "go/format" to fix that, at a 50x performance cost:
 
 	import (
 		"go/format"
-		"github.com/mitranim/repr"
+		"github.com/tmc/repr"
 	)
 
 	code := repr.Bytes(someDataStructure)
@@ -88,13 +88,13 @@ Installation
 
 Shell:
 
-	go get -u github.com/mitranim/repr
+	go get -u github.com/tmc/repr
 
 Usage
 
 Example:
 
-	import "github.com/mitranim/repr"
+	import "github.com/tmc/repr"
 
 	type Data struct {
 		Number int
@@ -118,7 +118,7 @@ Example:
 Misc
 
 I'm receptive to suggestions. If this package almost satisfies you but needs
-changes, open an issue or chat me up. Contacts: https://mitranim.com/#contacts
+changes, open an issue or chat me up. Contacts: https://tmc.com/#contacts
 */
 package repr
 

@@ -4,12 +4,12 @@ Prints Go data structures as syntactically valid Go code. Useful for code genera
 
 Solves a problem unaddressed by https://github.com/davecgh/go-spew/spew and directly competes with https://github.com/shurcooL/go-goon.
 
-See godoc at https://godoc.org/github.com/mitranim/repr.
+See godoc at https://godoc.org/github.com/tmc/repr.
 
 ## Example
 
 ```go
-import "github.com/mitranim/repr"
+import "github.com/tmc/repr"
 
 type Data struct {
   Number int
@@ -32,7 +32,7 @@ Data{
 */
 ```
 
-See the API documentation at https://godoc.org/github.com/mitranim/repr.
+See the API documentation at https://godoc.org/github.com/tmc/repr.
 
 ## License
 
@@ -40,4 +40,4 @@ https://en.wikipedia.org/wiki/WTFPL
 
 ## Misc
 
-I'm receptive to suggestions. If this package _almost_ satisfies you but needs changes, open an issue or chat me up. Contacts: https://mitranim.com/#contacts
+I'm receptive to suggestions. If this package _almost_ satisfies you but needs changes, open an issue or chat me up. Contacts: https://tmc.com/#contacts
