@@ -1,10 +1,8 @@
 ## Overview
 
-Prints Go data structures as syntactically valid Go code. Useful for code generation. The name "repr" stands for "representation" and alludes to the Python function with the same name.
+Prints Go data structures as syntactically valid Go code. 
 
-Solves a problem unaddressed by https://github.com/davecgh/go-spew/spew and directly competes with https://github.com/shurcooL/go-goon.
-
-See godoc at https://godoc.org/github.com/tmc/repr.
+https://godoc.org/github.com/tmc/repr.
 
 ## Example
 
@@ -31,13 +29,3 @@ Data{
 }
 */
 ```
-
-See the API documentation at https://godoc.org/github.com/tmc/repr.
-
-## License
-
-https://en.wikipedia.org/wiki/WTFPL
-
-## Misc
-
-I'm receptive to suggestions. If this package _almost_ satisfies you but needs changes, open an issue or chat me up. Contacts: https://tmc.com/#contacts
